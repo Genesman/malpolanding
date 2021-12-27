@@ -323,11 +323,14 @@ select {
 /* Banner content */
 
 .banner-content {
-    padding: 4rem;
+    grid-column: 1;
+    padding: 2rem;
 }
 
-.banner-content {
-    grid-column: 1;
+@media (min-width: 35.9375rem) {
+    .banner-content {
+        padding: 4rem;
+    }
 }
 
 @media (min-width: 75rem) {
