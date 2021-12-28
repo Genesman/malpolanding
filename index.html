@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <title>Malpo - Landing 01</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--  Google Fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     <!--  Main Style  -->
     <link rel="stylesheet" href="./src/css/style.css">
-    <!-- Swiper style -->
+    <!-- Swiper Style -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
-    <title>Malpo - Landing 01</title>
 </head>
 <body>
 
@@ -27,9 +27,9 @@
     </header>
 
     <div class="banner-project grid">
-        
+
         <div class="banner-image">
-            
+
             <!-- Logo Smart House -->
             <div class="smart-logo-wrapper">
                 <img src="./src/img/logo-smart-house.png" alt="Logo Malpo Smart House">
@@ -137,11 +137,13 @@
     </div>
 
     <main>
+
+        <!-- Info Project -->
         <section class="info-project" style="background-image: url(./src/img/banner-img-04.jpg)">
             <div class="blur"></div>
             <div class="container">
                 <h4 class="ff-heading fs-600 text-white">Vive otra ciudad</h4>
-                <div class="features grid">
+                <div class="project-features grid">
                     <div class="feature-item icon flex direction-column">
                         <img src="./src/img/beds-white.svg" alt="Casas 3 y 4 dormitorios">
                         <h5 class="text-white">Casas 3 y 4 dormitorios</h5>
@@ -160,11 +162,108 @@
                 </div>
             </div>
         </section>
+        <!-- /Info Project -->
+
+        <!-- Models -->
+        <section class="models">
+            
+            <div class="container">    
+                <!-- Model Slide Thumbs -->
+                <div class="swiper model-slide-thumbs">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="model">
+                                <div class="model-image-wrapper" style="background-image:url(./src/img/modelo-boldo.jpg)">
+                                    <a data-fslightbox href="./src/img/modelo-boldo.jpg" class="zoom"><img src="./src/img/zoom-icon.svg"></a>
+                                </div>
+                                <div class="model-title flex">
+                                    <p class="text-primary">Casa Boldo</p> <span>/</span> <p>Casa de 86 m2 construidos</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="model">
+                                <div class="model-image-wrapper" style="background-image:url(./src/img/modelo-laurel.jpg)">
+                                    <a data-fslightbox href="./src/img/modelo-laurel.jpg" class="zoom"><img src="./src/img/zoom-icon.svg"></a>
+                                </div>
+                                <div class="model-title flex">
+                                    <p class="text-primary">Casa Laurel</p> <span>/</span> <p>Casa de 103 m2 construidos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Model Slide Thumbs -->
+
+            </div>
+
+            <div class="container">
+                <!-- Model Features Slide -->
+                <div class="swiper model-slide-features">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="model-name fs-600">Casa Boldo</div>
+                            <div class="model-features grid">
+                                <ul class="features-list">
+                                    <li>Living comedor</li>
+                                    <li>3 dormitorios, principal en suite con walk in closet integrado</li>
+                                    <li>2 baños</li>
+                                    <li>Cocina amoblada y equipada con horno, campana y encimera</li>
+                                </ul>
+                                <div class="features-level flex">
+                                    <div class="level flex direction-column text-center">
+                                        <a data-fslightbox href="./src/img/piso1-boldo.jpg"><img src="./src/img/piso1-boldo.jpg" alt="Piso 1 Casa Boldo"></a>
+                                        <p>Piso 1</p>
+                                    </div>
+                                    <div class="level flex direction-column text-center">
+                                        <a data-fslightbox href="./src/img/piso2-boldo.jpg"><img src="./src/img/piso2-boldo.jpg" alt="Piso 2 Casa Boldo"></a>
+                                        <p>Piso 2</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="model-name fs-600">Casa Laurel</div>
+                            <div class="model-features grid">
+                                <ul class="features-list">
+                                    <li>Living comedor</li>
+                                    <li>3 dormitorios, principal en suite con walk in closet integrado</li>
+                                    <li>4to dormitorio o sala de estar / Home office</li>
+                                    <li>3 baños, incluye baño de visita</li>
+                                    <li>Cocina amoblada y equipada con Horno, campana y encimera</li>
+                                </ul>
+                                <div class="features-level flex">
+                                    <div class="level flex direction-column text-center">
+                                        <img src="./src/img/piso1-laurel.jpg" alt="Piso 1 Casa Laurel">
+                                        <p>Piso 1</p>
+                                    </div>
+                                    <div class="level flex direction-column text-center">
+                                        <img src="./src/img/piso2-laurel.jpg" alt="Piso 2 Casa Laurel">
+                                        <p>Piso 2</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- /Model Features Slide -->
+
+            </div>
+        </section>
+        <!-- /Models -->
+
     </main>
-    
+
 
     <!-- Scripts -->
+
+    <!-- Swiper Js -->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- Swipebox Js -->
+    <script src="./src/js/fslightbox.js"></script>
+    <!-- Main scripts -->
     <script src="./src/js/scripts.js"></script>
 
 </body>

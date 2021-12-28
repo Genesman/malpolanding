@@ -8,8 +8,7 @@
     --primary-color: 352 55% 42%;
     --primary-color-tint: 356 100% 82%;
     --primary-color-shade: 357 100% 17%;
-    --grey-color: 60 1% 21%;
-    --text-color: 203 30% 26%;
+    --text-color: 60 1% 21%;
     --white-color: 0 0% 100%;
 
     /* Font sizes */
@@ -69,6 +68,7 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
+    color: hsl( var(--text-color) );
     font-family: var(--ff-text);
     min-height: 100vh;
     text-rendering: optimizeSpeed;
@@ -112,7 +112,7 @@ select {
 }
 
 /* -------------------------------------------------------------------------- */
-/*                               UTILKITY CLASSESS                            */
+/*                               UTILITY CLASSESS                             */
 /* -------------------------------------------------------------------------- */
 
 /* General */
@@ -158,7 +158,7 @@ select {
 .bg-primary { background-color: hsl( var(--primary-color) ); }
 .bg-primary-dark { background-color: hsl( var(--primary-color-shade) ); }
 .bg-white { background-color: hsl( var(--white-color) ); }
-.bg-grey { background-color: hsl( var(--grey-color) ); }
+.bg-grey { background-color: hsl( var(--text-color) ); }
 
 .text-primary { color: hsl( var(--primary-color) ); }
 .text-primary-tint { color: hsl( var(--primary-color-tint) ); }
@@ -171,6 +171,7 @@ select {
 .ff-text { font-family: var(--ff-text); }
 
 .uppercase { text-transform: uppercase; }
+.text-center { text-align: center; }
 
 .fs-800 { font-size: var(--fs-800); }
 .fs-700 { font-size: var(--fs-700); }
@@ -269,9 +270,9 @@ select {
 
 .banner-slide-thumbs-wrapper .swiper {
     width: 25rem;
-    -webkit-box-shadow: 0 0 30px 0 hsl( var(--grey-color) / .4 );
-    -moz-box-shadow: 0 0 30px 0 hsl( var(--grey-color) / .4 );
-    box-shadow: 0 0 30px 0 hsl( var(--grey-color) / .4 );
+    -webkit-box-shadow: 0 0 30px 0 hsl( var(--text-color) / .4 );
+    -moz-box-shadow: 0 0 30px 0 hsl( var(--text-color) / .4 );
+    box-shadow: 0 0 30px 0 hsl( var(--text-color) / .4 );
 }
 
 .banner-slide-thumbs .swiper-slide {
@@ -361,7 +362,7 @@ select {
 
 .form-wrapper {
     background-color: hsl( var(--white-color) );
-    border: 1px solid hsl( var(--grey-color) / .20 );
+    border: 1px solid hsl( var(--text-color) / .2 );
     margin-top: 4.375rem;
     padding: 4.375rem 1.875rem 3.125rem;
     position: relative;
@@ -451,7 +452,7 @@ select {
 .form-group input[type="email"],
 .form-group select {
     background-color: hsl( var(--white-color) );
-    border: 1px solid hsl( var(--grey-color) );
+    border: 1px solid hsl( var(--text-color) / .5 );
 }
 
 .form-button {
@@ -478,7 +479,7 @@ select {
 }
 
 .check-control--disabled {
-    color: hsl( var(--grey-color) / .50 );
+    color: hsl( var(--text-color) / .5 );
     cursor: not-allowed;
 }
 
@@ -489,10 +490,10 @@ input[type="checkbox"] {
     margin: 0;
 
     font: inherit;
-    color: hsl( var(--grey-color) );
+    color: hsl( var(--text-color) );
     width: 1.15rem;
     height: 1.15rem;
-    border: 0.1rem solid hsl( var(--grey-color) );
+    border: 0.1rem solid hsl( var(--text-color) / .5 );
     border-radius: 0.13rem;
     transform: translateY(-0.075em);
 
@@ -522,12 +523,12 @@ input[type="checkbox"]:checked::before {
 }
 
 input[type="checkbox"]:focus {
-    outline: max(2px, 0.15em) solid hsl( var(--grey-color) / .20 );
+    outline: max(2px, 0.15em) solid hsl( var(--text-color) / .20 );
     outline-offset: max(2px, 0.15em);
 }
 
 input[type="checkbox"]:disabled {
-    border-color: hsl( var(--grey-color) / .50 );
+    border-color: hsl( var(--text-color) / .50 );
     cursor: not-allowed;
 }
 
@@ -543,7 +544,7 @@ input[type="checkbox"]:disabled {
 }
 
 .blur {
-    background-color: hsl( var(--grey-color) / .75 );
+    background-color: hsl( var(--text-color) / .75 );
     backdrop-filter: blur(8px);
     height: 100%;
     width: 100%;
@@ -555,7 +556,7 @@ input[type="checkbox"]:disabled {
 
 /* FEATURES */
 
-.features {
+.project-features {
     gap: 2rem;
     grid-template-columns: repeat(4, 10rem);
     grid-template-columns: repeat( auto-fill, minmax(10rem, 1fr) ) ;
@@ -570,3 +571,133 @@ input[type="checkbox"]:disabled {
     font-size: 1.125rem;
     margin: 0;
 }
+
+/* MODELS */
+.models {
+    padding-bottom: 8.125rem;    
+}
+
+@media ( max-width: 47.9375rem ) {
+    .models > .container:nth-child(1) {
+        max-width: 100%;
+        padding: 0;
+    }
+}
+
+.model {
+    cursor: pointer;
+}
+
+/* Model Thumbs */
+
+.model-image-wrapper {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 21.875rem;
+    position: relative;
+}
+
+.zoom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 3.125rem;
+    height: 3.125rem;
+    background-color: hsl( var(--primary-color-shade) / .8 );
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    padding: .625rem;
+    z-index: 2;
+}
+
+.model-title {
+    border: 1px solid hsl( var(--text-color) / .2 );
+    justify-content: center;
+    padding: 1.25rem .3125rem;
+    position: relative;
+}
+
+.models .swiper-slide-thumb-active .model-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: .1875rem;
+    background-color: hsl( var(--primary-color) );
+}
+
+/* Model features */
+
+.model-slide-features {
+    margin-top: 3rem;
+}
+
+@media ( min-width: 48rem ) {
+    .model-slide-features {
+        margin-top: 5rem;
+    }
+}
+
+.model-name {
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.model-features {
+    align-items: start;
+    grid-template-columns: 100%;
+}
+
+@media ( max-width: 47.9375rem ) {
+    .model-features {
+        --gap: 3rem
+    }
+}
+
+@media ( min-width: 48rem ) {
+    .model-features {
+        grid-template-columns: 30% 70%;
+    }
+}
+
+.features-list {
+    border: .0625rem solid hsl( var(--text-color) / .2 );
+    counter-reset: features;
+    grid-column: 1;
+    list-style-type: none;
+    margin: 0;
+    padding: 1.875rem .9375rem;
+}
+
+.features-list li {
+    padding-left: 1.875rem;
+    position: relative;
+}
+
+.features-list li:not(:last-child) {
+    margin-bottom: .625rem;
+}
+
+.features-list li::before {
+    counter-increment: features;
+    content: "0" counter(features);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: hsl( var(--primary-color) );
+    font-weight: bold;
+}
+
+.features-level {
+    --gap: 2rem;
+    justify-self: center;
+}
+
+@media ( min-width: 48rem ) {
+    .features-level {
+        justify-self: end;
+    }
+}
+
