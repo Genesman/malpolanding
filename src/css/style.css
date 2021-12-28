@@ -1,5 +1,5 @@
 /* -------------------------------------------------------------------------- */
-/*                              Custom Properties                             */
+/*                              CUSTOM PROPERTIES                             */
 /* -------------------------------------------------------------------------- */
 
 :root {
@@ -30,7 +30,7 @@
 }
 
 /* -------------------------------------------------------------------------- */
-/*                                    Reset                                   */
+/*                                    RESET                                   */
 /* -------------------------------------------------------------------------- */
 
 /* https://piccalil.li/blog/a-modern-css-reset/ */
@@ -112,7 +112,7 @@ select {
 }
 
 /* -------------------------------------------------------------------------- */
-/*                               Utility Classes                              */
+/*                               UTILKITY CLASSESS                            */
 /* -------------------------------------------------------------------------- */
 
 /* General */
@@ -181,17 +181,17 @@ select {
 
 
 /* -------------------------------------------------------------------------- */
-/*                                 Components                                 */
+/*                                 COMPONENTS                                 */
 /* -------------------------------------------------------------------------- */
 
-/* Header */
+/* HEADER */
 
 .header-wrapper {
     align-items: center;
     height: 120px;
 }
 
-/* Banner proyecto */
+/* BANNER PROJECT */
 
 .banner-project {
     grid-template-columns: 100%;
@@ -200,12 +200,6 @@ select {
 @media (max-width: 61.9375rem) {
     .banner-project {
         --gap: 0;
-    }
-}
-
-@media (min-width: 62rem) {
-    .banner-project {
-        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -237,8 +231,8 @@ select {
     position: absolute;
     top: 0;
     right: 0;
-    width: 9.375rem;
-    height: 6.25rem;
+    width: 7.5rem;
+    height: 4.375rem;
     padding: .625rem .9375rem;
     background-color: hsl( var(--white-color) / .5 );
     -webkit-backdrop-filter: blur(5px);
@@ -246,6 +240,13 @@ select {
     z-index: 2;
     display: grid;
     place-items: center;
+}
+
+@media ( min-width: 36rem ) {
+    .smart-logo-wrapper {
+        width: 9.375rem;
+        height: 6.25rem;
+    }
 }
 
 /* thumbs */
@@ -327,15 +328,24 @@ select {
     padding: 2rem;
 }
 
-@media (min-width: 35.9375rem) {
+@media ( min-width: 47.9375rem ) and ( max-width: 74.9375rem ) {
     .banner-content {
-        padding: 4rem;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr );
     }
 }
 
-@media (min-width: 75rem) {
+@media ( min-width: 48rem ) {
+    .banner-content > div {
+        max-width: 50ch;
+    }
+}
+
+@media ( min-width: 75rem ) {
     .banner-content {
         grid-column: 2 / 3;
+        padding: 4rem;
     }
 }
 
@@ -347,7 +357,7 @@ select {
     line-height: 1.2;
 }
 
-/* Formulario Proyecto */
+/* FORMULARIO PROYECTO */
 
 .form-wrapper {
     background-color: hsl( var(--white-color) );
@@ -358,7 +368,7 @@ select {
     z-index: 2;
 }
 
-@media (min-width: 62rem) {
+@media (min-width: 75rem) {
     .form-wrapper {
         position: absolute;
     }
@@ -371,6 +381,13 @@ select {
     left: 50%;
     transform: translateX(-50%);
     padding: 0 1.5625rem;
+    width: 80%;
+}
+
+@media ( min-width: 36rem ) {
+    .project-form-price {
+        width: 60%;
+    }
 }
 
 .price {
@@ -390,7 +407,13 @@ select {
 
 .project-form {
     --gap: 1.5rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+}
+
+@media ( min-width: 36rem ) {
+    .project-form {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .form-group.full {
@@ -508,7 +531,7 @@ input[type="checkbox"]:disabled {
     cursor: not-allowed;
 }
 
-/* Info project */
+/* INFO PROJECT */
 
 .info-project {
     background-repeat: no-repeat;
@@ -530,12 +553,12 @@ input[type="checkbox"]:disabled {
     z-index: -1;
 }
 
-/* feaures */
+/* FEATURES */
 
 .features {
     gap: 2rem;
     grid-template-columns: repeat(4, 10rem);
-    grid-template-columns: repeat( auto-fit, minmax(10rem, 1fr) ) ;
+    grid-template-columns: repeat( auto-fill, minmax(10rem, 1fr) ) ;
     margin-top: 4rem;
 }
 
