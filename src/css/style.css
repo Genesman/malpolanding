@@ -793,3 +793,44 @@ input[type="checkbox"]:disabled {
     max-width: 25ch;
     margin-bottom: 4rem;
 }
+
+/* VIDEO */
+
+.video {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60vh;
+    place-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.video::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsl( var(--primary-color-shade) / .8 );
+    z-index: -1;
+}
+
+.video img {
+    opacity: .8;
+    width: 80px;
+    transition: transform 350ms ease-in-out;
+}
+
+.video img:hover,
+.video img:focus {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* MAPA */
+
+.mapa {
+    height: 50vh;
+}
