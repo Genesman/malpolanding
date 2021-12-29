@@ -55,5 +55,29 @@ var swiperModel = new Swiper(".model-slide-features", {
     },
 });
 
+/* Gallery */
+var swiperGallery = new Swiper(".gallery-slide", {
+    slidesPerView: 1,
+    grid: {
+        rows: 2,
+        fill: 'row',
+    },
+    spaceBetween: 20,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        576: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+    },
+});
+
 /* Lightgallery */
 $( '.swipebox' ).swipebox();
