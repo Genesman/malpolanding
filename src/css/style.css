@@ -9,6 +9,7 @@
     --primary-color-tint: 356 100% 82%;
     --primary-color-shade: 357 100% 17%;
     --text-color: 60 1% 21%;
+    --lightgrey-color: 0 0% 95%;
     --white-color: 0 0% 100%;
 
     /* Font sizes */
@@ -159,6 +160,7 @@ select {
 .bg-primary-dark { background-color: hsl( var(--primary-color-shade) ); }
 .bg-white { background-color: hsl( var(--white-color) ); }
 .bg-grey { background-color: hsl( var(--text-color) ); }
+.bg-lightgrey { background-color: hsl( var(--lightgrey-color) ); }
 
 .text-primary { color: hsl( var(--primary-color) ); }
 .text-primary-tint { color: hsl( var(--primary-color-tint) ); }
@@ -618,6 +620,16 @@ input[type="checkbox"]:disabled {
     position: relative;
 }
 
+@media ( max-width: 23.6875rem ) {
+    .model-title {
+        align-items: center;
+        flex-direction: column;
+    }
+    .model-title span {
+        display: none;
+    }
+}
+
 .models .swiper-slide-thumb-active .model-title::after {
     content: '';
     position: absolute;
@@ -692,7 +704,7 @@ input[type="checkbox"]:disabled {
 
 .features-level {
     --gap: 2rem;
-    justify-self: center;
+    justify-self: center; 
 }
 
 @media ( min-width: 48rem ) {
@@ -701,3 +713,44 @@ input[type="checkbox"]:disabled {
     }
 }
 
+/* CONDOMINIO FEATURES */
+
+.condominio {
+    padding-block: 6.25rem;
+}
+
+@media ( min-width: 27.5rem ) {
+    .condominio-items {
+        --gap: 2rem;
+        grid-template-columns: repeat(auto-fill, minmax(23.75rem, 1fr));
+    }
+}
+
+.item {
+    /* background-color: hsl( var(--white-color) ); */
+    align-items: flex-start;
+}
+
+@media ( max-width: 27.4375rem ) {
+    .item {
+        flex-direction: column;
+    }
+}
+
+.item > img {
+    max-width: 6rem;
+}
+
+.item h4 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin-bottom: .3125rem;
+}
+
+.item-content {
+    padding: .9375rem .9375rem .9375rem 0;
+}
+
+.item-content p {
+    font-size: .875rem;
+}
