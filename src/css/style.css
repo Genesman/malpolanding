@@ -834,3 +834,120 @@ input[type="checkbox"]:disabled {
 .mapa {
     height: 50vh;
 }
+
+/* FOOTER */
+
+.footer-top {
+    background-color: #9C9C9B;
+    padding-block: 3.125rem;
+}
+
+.footer-wrapper {
+    grid-template-columns: 100%;
+}
+
+@media ( min-width: 768px ) {
+    .footer-wrapper {
+        grid-template-columns: 40% 60%;
+    }
+}
+
+.executive-contact h3 {
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.contacts {
+    grid-template-columns: 100%;
+}
+
+@media ( min-width: 36rem ) {
+    .contacts {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+.contact {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact:nth-child(1),
+.contact:nth-child(2) {
+    border-bottom: .0625rem solid hsl( var(--white-color) / .4 );
+    padding-bottom: 1rem;
+}
+
+@media ( max-width: 36rem ) {
+    .contact:nth-child(1),
+    .contact:nth-child(2),
+    .contact:nth-child(3) {
+        border-bottom: .0625rem solid hsl( var(--white-color) / .4 );
+        padding-bottom: 1rem;
+    }
+}
+
+.contact li {
+    color: hsl( var(--white-color) );
+    padding-left: 2.5rem;
+    position: relative;
+}
+
+.contact li:not(:last-child) {
+    margin-bottom: .5rem;
+}
+
+.contact li::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.contact li.name::before { content: url(../img/user-icon.svg); }
+.contact li.email::before { content: url(../img/email-icon.svg); }
+.contact li.phone::before { content: url(../img/phone-icon.svg); }
+
+.contact li a {
+    color: hsl( var(--white-color) );
+    text-decoration: none;
+    transition: color 250ms ease-in-out;
+}
+
+.contact li a:hover,
+.contact li a:focus {
+    color: hsl( var(--primary-color) );
+}
+
+.general-info {
+    padding-top: 4rem;
+}
+
+.general-info > p {
+    text-align: left;
+}
+
+@media ( min-width: 48rem ) {
+    .general-info > p {
+        text-align: right;
+    }
+}
+
+.footer-bottom {
+    justify-content: center;
+    padding-block: 3rem;
+}
+
+@media ( max-width: 35.9375rem ) {
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.footer-bottom > p {
+    margin-right: 10px;
+}
