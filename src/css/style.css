@@ -81,6 +81,10 @@ body {
     line-height: 1.5;
 }
 
+main {
+    position: relative;
+}
+
 /* A elements that don't have a class get default styles */
 a:not([class]) {
     text-decoration-skip-ink: auto;
@@ -950,4 +954,36 @@ input[type="checkbox"]:disabled {
 
 .footer-bottom > p {
     margin-right: 10px;
+}
+
+/* TERMINOS Y CONDICIONES */
+
+.condiciones {
+    background-color: hsl( var(--primary-color-shade) / .9 );
+    font-size: .875rem;
+    padding: 1.25rem;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.condiciones > a {
+    text-decoration: none;
+}
+
+.btn-accept {
+    border-radius: var(--br);
+    background-color: hsl( var(--white-color) );
+    color: hsl( var(--primary-color-shade) );
+    padding: .3125rem .625rem;
+    transition: background-color 350ms ease-in-out;
+}
+
+.btn-accept:hover,
+.btn-accept:focus {
+    background-color: hsl( var(--primary-color-tint) );
 }

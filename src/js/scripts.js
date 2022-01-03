@@ -42,7 +42,7 @@ var swiperModel = new Swiper(".model-slide-features", {
     loop: false,
     speed: 1000,
     spaceBetween: 20,
-    grabCursor: false,
+    grabCursor: true,
     watchSlidesProgress: true,
     mousewheelControl: true,
     keyboardControl: true,
@@ -55,8 +55,12 @@ var swiperModel = new Swiper(".model-slide-features", {
     },
 });
 
+// swiperModel.controller.control = swiperModelThumbs;
+// swiperModelThumbs.controller.control = swiperModel;
+
 /* Gallery */
 var swiperGallery = new Swiper(".gallery-slide", {
+    grabCursor: true,
     slidesPerView: 1,
     grid: {
         rows: 2,
