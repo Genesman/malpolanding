@@ -83,13 +83,24 @@ var swiperGallery = new Swiper(".gallery-slide", {
     },
 });
 
-/* Terminos y Conidiciones */
-const termsBtn = document.getElementById = ('termsBtn');
-const condiciones = document.getElementById = ('condiciones');
+/* Sticky button */
 
-termsBtn.addEventListener('click', () => {
-    condiciones.style.display = 'none';
+window.addEventListener('scroll', (e) => {
+    
+    const last_known_scroll_position = window.scrollY;
+    const formWrapper = document.getElementById("formWrapper");
+    const stickyBtn = document.getElementById("stickyBtn"); 
+    
+    // if(stickyBtn.offsetTop < last_known_scroll_position){
+    if(last_known_scroll_position > formWrapper.offsetTop + formWrapper.offsetHeight){
+        stickyBtn.classList.add('sticky');
+    } else {
+        stickyBtn.classList.remove('sticky');
+    }
+
 });
+
+
 
 /* Lightgallery */
 $( '.swipebox' ).swipebox();

@@ -68,7 +68,9 @@ ol[role='list'] {
 }
 
 /* Set core root defaults */
-html:focus-within {
+html,
+html:focus-within,
+body {
     scroll-behavior: smooth;
 }
 
@@ -542,6 +544,65 @@ input[type="checkbox"]:disabled {
     cursor: not-allowed;
 }
 
+/* Sticky button */
+
+.sticky-btn {
+    border-radius: 0 0 var(--br) var(--br);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    opacity: 0;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.sticky-btn.sticky {
+    position: fixed !important;
+    top: 0;
+    opacity: 1;
+    z-index: 999 !important;
+    -webkit-animation: fromTop .5s alternate;
+    animation: fromTop .5s alternate;
+}
+
+.sticky-btn.sticky img {
+    animation: scrollArrow .5s ease-in alternate infinite;
+}
+
+.sticky-btn > span {
+    padding: .625rem 0 .625rem 1.25rem;
+}
+
+.sticky-btn > div {
+    background-color: hsl( var(--primary-color-tint) );
+    border-bottom-right-radius: inherit;
+    padding: .625rem 1.25rem;
+    place-items: center;
+}
+
+.sticky-btn img {
+    width: .625rem;
+}
+
+
+@keyframes fromTop {
+    0% {
+        top: -5.25rem;
+    }
+    to {
+        top: 0;
+    }
+}
+
+@keyframes scrollArrow {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-0.3125rem);
+    }
+}
+
 /* INFO PROJECT */
 
 .info-project {
@@ -913,7 +974,7 @@ input[type="checkbox"]:disabled {
 
 .contact li.name::before { content: url(../img/user-icon.svg); }
 .contact li.email::before { content: url(../img/email-icon.svg); }
-.contact li.phone::before { content: url(../img/phone-icon.svg); }
+.contact li.phone::before { content: url(../img/whatsapp-icon.svg); }
 
 .contact li a {
     color: hsl( var(--white-color) );
