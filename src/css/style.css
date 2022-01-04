@@ -288,11 +288,11 @@ select {
 .banner-slide-thumbs .swiper-slide {
     width: 30%;
     height: 100%;
-    opacity: 0.4;
+    filter: brightness(50%);
 }
 
 .banner-slide-thumbs .swiper-slide-thumb-active {
-    opacity: 1;
+    filter: brightness(100%);
 }
 
 /* custom arrows */

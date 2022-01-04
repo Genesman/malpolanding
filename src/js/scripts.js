@@ -1,6 +1,6 @@
 /*  Banner Slide  */
 var swiperBannerThumbs = new Swiper(".banner-slide-thumbs", {
-    spaceBetween: 0,
+    spaceBetween: 10,
     slidesPerView: 3,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
@@ -81,6 +81,14 @@ var swiperGallery = new Swiper(".gallery-slide", {
             spaceBetween: 30,
         },
     },
+});
+
+/* Terminos y Conidiciones */
+const termsBtn = document.getElementById = ('termsBtn');
+const condiciones = document.getElementById = ('condiciones');
+
+termsBtn.addEventListener('click', () => {
+    condiciones.style.display = 'none';
 });
 
 /* Lightgallery */
