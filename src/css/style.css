@@ -358,12 +358,27 @@ select {
 @media ( min-width: 75rem ) {
     .banner-content {
         grid-column: 2 / 3;
-        padding: 4rem;
+        padding: 1.5rem 4rem;
+    }
+}
+
+@media ( min-width: 75rem ) {
+    .template2 .banner-content {
+        grid-column: 2 / 3;
+        padding: 1.3rem 4rem;
     }
 }
 
 .identity-logo {
     margin-bottom: 2rem;
+}
+
+.template2 .identity-logo {
+    justify-content: center;
+}
+
+.identity-logo > img {
+    max-width: 12.5rem;
 }
 
 .banner-content h1 {
@@ -384,6 +399,12 @@ select {
 @media (min-width: 75rem) {
     .form-wrapper {
         position: absolute;
+    }
+}
+
+@media (min-width: 75rem) {
+    .template2 .form-wrapper {
+        position: relative;
     }
 }
 
@@ -550,7 +571,7 @@ input[type="checkbox"]:disabled {
     border-radius: 0 0 var(--br) var(--br);
     position: absolute;
     top: 100%;
-    right: 0;
+    right: 1.875rem;
     opacity: 0;
     justify-content: space-between;
     text-decoration: none;
@@ -632,6 +653,37 @@ input[type="checkbox"]:disabled {
     grid-template-columns: repeat(4, 10rem);
     grid-template-columns: repeat( auto-fill, minmax(10rem, 1fr) ) ;
     margin-top: 4rem;
+}
+
+.template2 .project-features {
+    grid-template-columns: 100%;
+}
+
+@media ( min-width: 36rem ) {
+    .template2 .project-features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media ( min-width: 62rem ) {
+    .template2 .project-features {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+.template2 .feature-heading h4 {
+    margin-bottom: 1.25rem;
+}
+
+.template2 .feature-item {
+    background-color: hsl(0deg 0% 30%);
+    height: min(80vh, 18.75rem);
+    padding: 3.125rem 2.5rem;
+}
+
+.template2 .feature-item h5 {
+    font-size: 1.25rem;
 }
 
 .feature-item.icon > img {
@@ -788,19 +840,23 @@ input[type="checkbox"]:disabled {
     padding-block: 6.25rem;
 }
 
-@media ( min-width: 27.5rem ) {
+@media ( min-width: 23.125rem ) {
     .condominio-items {
         --gap: 2rem;
+    }
+}
+
+@media ( min-width: 27.5rem ) {
+    .condominio-items {
         grid-template-columns: repeat(auto-fill, minmax(23.75rem, 1fr));
     }
 }
 
 .item {
-    /* background-color: hsl( var(--white-color) ); */
     align-items: flex-start;
 }
 
-@media ( max-width: 27.4375rem ) {
+@media ( max-width: 23.125rem ) {
     .item {
         flex-direction: column;
     }
@@ -814,10 +870,6 @@ input[type="checkbox"]:disabled {
     font-size: 1.125rem;
     font-weight: 400;
     margin-bottom: .3125rem;
-}
-
-.item-content {
-    padding: .9375rem .9375rem .9375rem 0;
 }
 
 .item-content p {

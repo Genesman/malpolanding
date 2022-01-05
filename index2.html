@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Malpo - Condominio Neyen</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/img/favicon.png" type="image/x-icon">
+    <!--  Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <!--  Main Style  -->
+    <link rel="stylesheet" href="./src/css/style.css">
+    <!-- Swiper Style -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+</head>
+<body class="template2">
+
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper flex">
+                <div class="header-logo">
+                    <img src="./src/img/logo-malpo.svg" alt="Logo Malpo">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <a href="#formWrapper" id="stickyBtn" class="bg-primary text-white sticky-btn flex">
+        <span>Agendar</span>
+        <div class="grid"><img src="./src/img/totop.svg" alt="Flecha ir arriba"></div>
+    </a>
+
+    <div class="banner-project grid">
+
+        <div class="banner-image">
+
+            <!-- Logo Smart House -->
+            <div class="smart-logo-wrapper">
+                <img src="./src/img/logo-smart-house.png" alt="Logo Malpo Smart House">
+            </div>
+            <!-- /Logo Smart House -->
+
+            <!-- Banner Slide -->
+            <div class="swiper banner-slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./src/img/banner-img-01.jpg" alt="Imagen banner 01"></div>
+                    <div class="swiper-slide"><img src="./src/img/banner-img-02.jpg" alt="Imagen banner 02"></div>
+                    <div class="swiper-slide"><img src="./src/img/banner-img-03.jpg" alt="Imagen banner 03"></div>
+                    <div class="swiper-slide"><img src="./src/img/banner-img-04.jpg" alt="Imagen banner 04"></div>
+                </div>
+            </div>
+            <!-- /Banner Slide -->
+
+            <!-- Banner Thumbs Slide -->
+            <div class="banner-slide-thumbs-wrapper">
+                <div class="swiper banner-slide-thumbs">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./src/img/banner-img-01.jpg" alt="Imagen thumbnail banner 01"></div>
+                        <div class="swiper-slide"><img src="./src/img/banner-img-02.jpg" alt="Imagen thumbnail banner 02"></div>
+                        <div class="swiper-slide"><img src="./src/img/banner-img-03.jpg" alt="Imagen thumbnail banner 03"></div>
+                        <div class="swiper-slide"><img src="./src/img/banner-img-04.jpg" alt="Imagen thumbnail banner 04"></div>
+                    </div>
+                </div>
+                <!-- navigation -->
+                <div class="prev">
+                    <svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M30 10C30 9.70536 29.8871 9.42278 29.6862 9.21444C29.4853 9.00609 29.2128 8.88904 28.9286 8.88904H3.65954L10.4027 1.89892C10.5023 1.79562 10.5813 1.673 10.6352 1.53804C10.6891 1.40308 10.7169 1.25844 10.7169 1.11236C10.7169 0.966282 10.6891 0.821635 10.6352 0.686677C10.5813 0.55172 10.5023 0.429094 10.4027 0.325802C10.3031 0.22251 10.1848 0.140575 10.0547 0.0846733C9.92452 0.0287721 9.78503 0 9.64416 0C9.50329 0 9.36379 0.0287721 9.23365 0.0846733C9.1035 0.140575 8.98524 0.22251 8.88563 0.325802L0.314752 9.21344C0.21498 9.31664 0.135822 9.43924 0.0818117 9.57421C0.0278014 9.70918 0 9.85387 0 10C0 10.1461 0.0278014 10.2908 0.0818117 10.4258C0.135822 10.5608 0.21498 10.6834 0.314752 10.7866L8.88563 19.6742C8.98524 19.7775 9.1035 19.8594 9.23365 19.9153C9.36379 19.9712 9.50329 20 9.64416 20C9.78503 20 9.92452 19.9712 10.0547 19.9153C10.1848 19.8594 10.3031 19.7775 10.4027 19.6742C10.5023 19.5709 10.5813 19.4483 10.6352 19.3133C10.6891 19.1784 10.7169 19.0337 10.7169 18.8876C10.7169 18.7416 10.6891 18.5969 10.6352 18.462C10.5813 18.327 10.5023 18.2044 10.4027 18.1011L3.65954 11.111H28.9286C29.2128 11.111 29.4853 10.9939 29.6862 10.7856C29.8871 10.5772 30 10.2946 30 10Z" fill="white"/>
+                    </svg>
+                </div>
+                <div class="next">
+                    <svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M-2.97907e-07 10C-3.23665e-07 10.2946 0.112874 10.5772 0.313793 10.7856C0.514712 10.9939 0.787217 11.111 1.07136 11.111L26.3405 11.111L19.5973 18.1011C19.4977 18.2044 19.4187 18.327 19.3648 18.462C19.3109 18.5969 19.2831 18.7416 19.2831 18.8876C19.2831 19.0337 19.3109 19.1784 19.3648 19.3133C19.4187 19.4483 19.4977 19.5709 19.5973 19.6742C19.6969 19.7775 19.8152 19.8594 19.9453 19.9153C20.0755 19.9712 20.215 20 20.3558 20C20.4967 20 20.6362 19.9712 20.7664 19.9153C20.8965 19.8594 21.0148 19.7775 21.1144 19.6742L29.6852 10.7866C29.785 10.6834 29.8642 10.5608 29.9182 10.4258C29.9722 10.2908 30 10.1461 30 10C30 9.85387 29.9722 9.70918 29.9182 9.57421C29.8642 9.43924 29.785 9.31664 29.6852 9.21344L21.1144 0.325801C21.0148 0.222509 20.8965 0.140573 20.7664 0.0846717C20.6362 0.0287704 20.4967 -6.49101e-07 20.3558 -6.61416e-07C20.215 -6.73732e-07 20.0755 0.0287703 19.9453 0.0846716C19.8152 0.140573 19.6969 0.222509 19.5973 0.325801C19.4977 0.429093 19.4187 0.551718 19.3648 0.686676C19.3109 0.821633 19.2831 0.96628 19.2831 1.11236C19.2831 1.25843 19.3109 1.40308 19.3648 1.53804C19.4187 1.673 19.4977 1.79562 19.5973 1.89891L26.3405 8.88904L1.07136 8.88904C0.787218 8.88904 0.514712 9.00609 0.313793 9.21443C0.112874 9.42278 -2.72148e-07 9.70535 -2.97907e-07 10Z" fill="white"/>
+                    </svg>
+                </div>
+                <!-- /navigation -->
+            </div>
+            <!-- /Banner Thumbs Slide -->
+
+        </div>
+
+        <div class="banner-content">
+            <div>
+                <div class="identity-logo flex">
+                    <img src="./src/img/logo-identidad.jpg" alt="Logo Proyecto">
+                </div>
+                <h1 class="ff-heading fs-700 text-primary uppercase text-center">Vive otra ciudad</h1>
+            </div>
+            <div id="formWrapper" class="form-wrapper">
+                <div class="project-form-price">
+                    <p class="price fs-400">
+                        Desde uf 2.90
+                        <span>* No aplica subsidio</span>
+                    </p>
+                </div>
+                <form class="project-form grid" action="">
+                    <div class="form-group">
+                        <label for="nombre">Nombre y Apellido</label>
+                        <input type="text" name="nombre" id="nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="rut">Rut</label>
+                        <input type="text" name="rut" id="rut">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" name="telefono" id="telefono">
+                    </div>
+                    <div class="form-group full">
+                        <label for="modelo">Selecciona el modelo</label>
+                        <select name="modelo" id="modelo">
+                            <option value="1">Regular</option>
+                            <option value="2">Premiun</option>
+                        </select>
+                    </div>
+                    <!-- <div class="form-group full">
+                        <div class="check-group flex">
+                            <div class="check">
+                                <label class="check-control grid" for="invertir">
+                                    <input type="checkbox" name="invertir" id="invertir">
+                                    Invertir
+                                </label>
+                            </div>
+                            <div class="check">
+                                <label class="check-control grid" for="vivir">
+                                    <input type="checkbox" name="vivir" id="vivir">
+                                    Vivir
+                                </label>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="form-group full">
+                        <button class="form-button" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <main>
+
+        <!-- Info Project -->
+        <section class="info-project bg-grey">
+            <div class="container">
+                <div class="project-features grid">
+                    <div class="feature-heading">
+                        <h4 class="ff-heading fs-600 text-white">Tranquilidad y Seguridad en el mejor barrio de Talca.</h4>
+                        <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi earum odit enim rem fugiat laudantium esse magnam ad, exercitationem quo.</p>
+                    </div>
+                    <div class="feature-item icon flex direction-column">
+                        <div><img src="./src/img/beds-white.svg" alt="Casas 3 y 4 dormitorios"></div>
+                        <h5 class="text-white">Casas 3 y 4 dormitorios</h5>
+                    </div>
+                    <div class="feature-item icon flex direction-column">
+                        <div><img src="./src/img/plans-white.svg" alt="86 y 103 mts2"></div>
+                        <h5 class="text-white">86 y 103 mts2</h5>
+                    </div>
+                    <div class="feature-item icon flex direction-column">
+                        <div><img src="./src/img/hand-gesture-white.svg" alt="Entrega 2do semestre 2023"></div>
+                        <h5 class="text-white">Entrega 2do semestre 2023</h5>
+                    </div>
+                    <!-- <div class="feature-item flex direction-column">
+                        <img src="./src/img/logo-pagos.svg" alt="Logo pago 3 a 12 cuotas">
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <!-- /Info Project -->
+
+        <!-- Models -->
+        <section class="models">
+            
+            <div class="container">    
+                <!-- Model Slide Thumbs -->
+                <div class="swiper model-slide-thumbs">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="model">
+                                <div class="model-image-wrapper" style="background-image:url(./src/img/modelo-boldo.jpg)">
+                                    <a data-fslightbox href="./src/img/modelo-boldo.jpg" class="zoom"><img src="./src/img/zoom-icon.svg" alt="Icono zoom imagen"></a>
+                                </div>
+                                <div class="model-title flex">
+                                    <p class="text-primary">Casa Boldo</p> <span>/</span> <p>Casa de 86 m2 construidos</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="model">
+                                <div class="model-image-wrapper" style="background-image:url(./src/img/modelo-laurel.jpg)">
+                                    <a data-fslightbox href="./src/img/modelo-laurel.jpg" class="zoom"><img src="./src/img/zoom-icon.svg" alt="Icono zoom imagen"></a>
+                                </div>
+                                <div class="model-title flex">
+                                    <p class="text-primary">Casa Laurel</p> <span>/</span> <p>Casa de 103 m2 construidos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Model Slide Thumbs -->
+
+            </div>
+
+            <div class="container">
+                <!-- Model Features Slide -->
+                <div class="swiper model-slide-features">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="model-name ff-heading fs-600">Casa Boldo</div>
+                            <div class="model-features grid">
+                                <ul class="features-list">
+                                    <li>Living comedor</li>
+                                    <li>3 dormitorios, principal en suite con walk in closet integrado</li>
+                                    <li>2 baños</li>
+                                    <li>Cocina amoblada y equipada con horno, campana y encimera</li>
+                                </ul>
+                                <div class="features-level flex">
+                                    <div class="level flex direction-column text-center">
+                                        <a data-fslightbox href="./src/img/piso1-boldo.jpg"><img src="./src/img/piso1-boldo.jpg" alt="Piso 1 Casa Boldo"></a>
+                                        <p>Piso 1</p>
+                                    </div>
+                                    <div class="level flex direction-column text-center">
+                                        <a data-fslightbox href="./src/img/piso2-boldo.jpg"><img src="./src/img/piso2-boldo.jpg" alt="Piso 2 Casa Boldo"></a>
+                                        <p>Piso 2</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="model-name fs-600">Casa Laurel</div>
+                            <div class="model-features grid">
+                                <ul class="features-list">
+                                    <li>Living comedor</li>
+                                    <li>3 dormitorios, principal en suite con walk in closet integrado</li>
+                                    <li>4to dormitorio o sala de estar / Home office</li>
+                                    <li>3 baños, incluye baño de visita</li>
+                                    <li>Cocina amoblada y equipada con Horno, campana y encimera</li>
+                                </ul>
+                                <div class="features-level flex">
+                                    <div class="level flex direction-column text-center">
+                                        <a data-fslightbox href="./src/img/piso1-laurel.jpg"><img src="./src/img/piso1-laurel.jpg" alt="Piso 1 Casa Laurel"></a>
+                                        <p>Piso 1</p>
+                                    </div>
+                                    <div class="level flex direction-column text-center">
+                                        <a data-fslightbox href="./src/img/piso2-laurel.jpg"><img src="./src/img/piso2-laurel.jpg" alt="Piso 2 Casa Laurel"></a>
+                                        <p>Piso 2</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- /Model Features Slide -->
+
+            </div>
+        </section>
+        <!-- /Models -->
+
+        <!-- Condominio Features -->
+        <section class="condominio bg-lightgrey">
+            <div class="container">
+                <div class="condominio-items grid">
+                    <div class="item flex">
+                        <img src="./src/img/seguridad-icon.svg" alt="Icono seguridad">
+                        <div class="item-content">
+                            <h4 class="text-primary">Seguridad</h4>
+                            <p>Condominio con accesos vigilados</p>
+                        </div>
+                    </div>
+                    <div class="item flex">
+                        <img src="./src/img/sustentabilidad-icon.svg" alt="Icono sustentabilidad">
+                        <div class="item-content">
+                            <h4 class="text-primary">Sustentaibilidad</h4>
+                            <p>Grandes áreas verdes, punto limpio, centros de ejercicio, quinchos y más</p>
+                        </div>
+                    </div>
+                    <div class="item flex">
+                        <img src="./src/img/comodidad-icon.svg" alt="Icono comodidad">
+                        <div class="item-content">
+                            <h4 class="text-primary">Comodidad</h4>
+                            <p>Casas inteligentes con sistema domótica</p>
+                        </div>
+                    </div>
+                    <div class="item flex">
+                        <img src="./src/img/plusvalia-icon.svg" alt="Icono plusvalía">
+                        <div class="item-content">
+                            <h4 class="text-primary">Plusvalía</h4>
+                            <p>Uno de los mejores barrios de talca, con crecimiento comercial</p>
+                        </div>
+                    </div>
+                    <div class="item flex">
+                        <img src="./src/img/conectividad-icon.svg" alt="Icono conectividad">
+                        <div class="item-content">
+                            <h4 class="text-primary">Conectividad</h4>
+                            <p>Cercano a mall, servicios, parques, supermercados, restaurantes, clínicas y centros de estudio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Condominio Features -->
+
+        <!-- Gallery -->
+        <section class="gallery grid" style="--gap:0;">
+            <div class="gallery-hero">
+                <img src="./src/img/gallery-hero-img.jpg" alt="Imagen presentación galería">
+            </div>
+            <div class="gallery-wrapper bg-grey">
+                <h2 class="ff-heading fs-700 text-white">Ahora en Talca una nueva forma de vivir en <span class="text-primary">condominio</span></h2>
+                <div class="swiper gallery-slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./src/img/interior1.jpg" alt="Imagen 1 interior casa"></div>
+                        <div class="swiper-slide"><img src="./src/img/interior2.jpg" alt="Imagen 2 interior casa"></div>
+                        <div class="swiper-slide"><img src="./src/img/interior3.jpg" alt="Imagen 3 interior casa"></div>
+                        <div class="swiper-slide"><img src="./src/img/interior4.jpg" alt="Imagen 4 interior casa"></div>
+                        <div class="swiper-slide"><img src="./src/img/gallery-hero-img.jpg" alt="Imagen 1 exterior condominio"></div>
+                        <div class="swiper-slide"><img src="./src/img/banner-img-04.jpg" alt="Imagen 2 exterior condominio"></div>
+                        <div class="swiper-slide"><img src="./src/img/interior1.jpg" alt="Imagen 1 interior casa"></div>
+                        <div class="swiper-slide"><img src="./src/img/interior2.jpg" alt="Imagen 2 interior casa"></div>
+                        <div class="swiper-slide"><img src="./src/img/interior3.jpg" alt="Imagen 3 interior casa"></div>
+                        <div class="swiper-slide"><img src="./src/img/interior4.jpg" alt="Imagen 4 interior casa"></div>
+                        <div class="swiper-slide"><img src="./src/img/gallery-hero-img.jpg" alt="Imagen 1 exterior condominio"></div>
+                        <div class="swiper-slide"><img src="./src/img/banner-img-04.jpg" alt="Imagen 2 exterior condominio"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Gallery -->
+
+        <!-- Video -->
+        <section class="video grid" style="background-image:url(https://images.unsplash.com/photo-1513880989635-6eb491ce7f5b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80);">
+            <a data-fslightbox href="https://www.youtube.com/watch?v=NWJMDBCqmCw">
+                <img src="./src/img/play-icon.svg" alt="Icono play video">
+            </a>
+        </section>
+        <!-- /Video -->
+
+        <!-- Mapa -->
+        <section class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13006.147727613505!2d-71.606361!3d-35.416727!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x49b1911fe94aa0f2!2zMzXCsDI1JzAwLjIiUyA3McKwMzYnMjIuOSJX!5e0!3m2!1ses-419!2sus!4v1640803236210!5m2!1ses-419!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" title="Ubicación proyecto en mapa"></iframe>
+        </section>
+        <!-- Mapa -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-top">
+                <div class="container">
+                    <div class="footer-wrapper grid">
+                        <div class="executive-contact">
+                            <h3 class="ff-heading fs-500 text-white">Contacto Ejecutivo</h3>
+                            <div class="contacts grid">
+                                <ul class="contact">
+                                    <li class="name">Claudia Opazo</li>
+                                    <li class="email"><a href="mailto:copazo@malpo.cl">copazo@malpo.cl</a></li>
+                                    <li class="phone"><a href="tel:+56998844392">+56 998 844 392</a></li>
+                                </ul>
+                                <ul class="contact">
+                                    <li class="name">Ana Gómez</li>
+                                    <li class="email"><a href="mailto:agomez@malpo.cl">agomez@malpo.cl</a></li>
+                                    <li class="phone"><a href="tel:+56998844535">+56 998 844 535</a></li>
+                                </ul>
+                                <ul class="contact">
+                                    <li class="name">Ana Rivas</li>
+                                    <li class="email"><a href="mailto:arivas@malpo.cl">arivas@malpo.cl</a></li>
+                                    <li class="phone"><a href="tel:+56981592359">+56 981 592 359</a></li>
+                                </ul>
+                                <ul class="contact">
+                                    <li class="name">Begoña Opazo</li>
+                                    <li class="email"><a href="mailto:bopazo@malpo.cl">bopazo@malpo.cl</a></li>
+                                    <li class="phone"><a href="tel:+56951894412">+56 951 894 412</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="general-info">
+                            <p class="text-white">
+                                Sala de Ventas: Av. Las Rastras, esq. 9 Norte<br>
+                                Proyecto: 23 Norte s/n con 40 Oriente, Talca<br>
+                                Horario de Atención Sala de Ventas:<br>
+                                Lunes a Viernes de 10:30 a 13:30 hrs. y 15:30 a 19:00 hrs. Sábado: 10:30 a 17:00 hrs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom flex bg-grey">
+                <p class="text-white uppercase fs-500 ff-heading">Un proyecto de</p>
+                <img src="./src/img/logo-white.svg" alt="Logo Malpo">
+            </div>
+        </footer>
+        <!-- /Footer -->
+
+        <div id="condiciones" class="condiciones flex text-white">
+            <p>El sitio cuenta con <a class="text-white" href="#" target="_blank">politicas de privacidad</a> para los datos enviados a través del formulario de contacto.</p>
+            <a href="#" id="termsBtn" class="text-white btn-accept uppercase" role="button">Aceptar</a>
+        </div>
+        
+    </main>
+
+
+    <!-- Scripts -->
+
+    <!-- Swiper Js -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- Swipebox Js -->
+    <script src="./src/js/fslightbox.js"></script>
+    <!-- Main scripts -->
+    <script src="./src/js/scripts.js"></script>
+
+</body>
+</html>
