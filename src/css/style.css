@@ -657,6 +657,7 @@ input[type="checkbox"]:disabled {
 
 .template2 .project-features {
     grid-template-columns: 100%;
+    margin-top: 0;
 }
 
 @media ( min-width: 36rem ) {
