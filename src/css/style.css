@@ -197,6 +197,33 @@ select {
 /*                                 COMPONENTS                                 */
 /* -------------------------------------------------------------------------- */
 
+/* ALERTS */
+.malpo-alert .swal2-popup.swal2-toast {
+    background-image: url('../img/bg-alert.jpg');
+    background-size: cover;
+    background-position: center center;
+    border-radius: 0;
+    box-shadow: 0 10px 8px -10px hsl( var(--primary-color-shade) / .9 );
+    position: relative;
+    z-index: 1;
+}
+
+.malpo-alert .swal2-popup.swal2-toast::after {
+    content: '';
+    background-color: hsl( var(--primary-color-shade) / .8 );
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.malpo-alert .swal2-title {
+    font-weight: 500;
+    color: hsl( var(--white-color) )
+}
+
 /* HEADER */
 
 .header-wrapper {

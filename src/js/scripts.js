@@ -99,8 +99,22 @@ window.addEventListener('scroll', (e) => {
     }
 
 });
+/* Alerts  */
 
-
+const Toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 5000,
+    timerProgressBar: false,
+    customClass: {
+        container: 'malpo-alert',
+    },
+    onOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+});
 
 /* Lightgallery */
 $( '.swipebox' ).swipebox();
