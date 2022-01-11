@@ -86,12 +86,11 @@ var swiperGallery = new Swiper(".gallery-slide", {
 /* Sticky button */
 
 window.addEventListener('scroll', (e) => {
-    
+
     const last_known_scroll_position = window.scrollY;
     const formWrapper = document.getElementById("formWrapper");
-    const stickyBtn = document.getElementById("stickyBtn"); 
-    
-    // if(stickyBtn.offsetTop < last_known_scroll_position){
+    const stickyBtn = document.getElementById("stickyBtn");
+
     if(last_known_scroll_position > formWrapper.offsetTop + formWrapper.offsetHeight){
         stickyBtn.classList.add('sticky');
     } else {
@@ -115,6 +114,23 @@ const Toast = Swal.mixin({
         toast.addEventListener('mouseleave', Swal.resumeTimer)
     }
 });
+
+/* Terms Bar */
+const termsBar = document.getElementById('condiciones');
+const acceptTerms = document.getElementById('termsBtn');
+
+const termsAccepted = localStorage.getItem('terms-accepted');
+
+if (!termsAccepted) {
+    termsBar.classList.add('active');
+}
+
+acceptTerms.addEventListener('click', (e) =>  {
+    e.preventDefault();
+    termsBar.classList.remove('active');
+
+    localStorage.setItem('terms-accepted', true);
+})
 
 /* Lightgallery */
 $( '.swipebox' ).swipebox();
