@@ -1,0 +1,35 @@
+/* -------------------------------------------------------------------------- */
+/*                              CUSTOM PROPERTIES                             */
+/* -------------------------------------------------------------------------- */
+
+:root {
+
+    /* Colors */
+    --primary-color: 352 55% 42%;
+    --primary-color-tint: 356 100% 82%;
+    --primary-color-shade: 357 100% 17%;
+    --text-color: 60 1% 21%;
+    --lightgrey-color: 0 0% 95%;
+    --white-color: 0 0% 100%;
+
+    /* Font sizes */
+    --fs-700: 2.5rem;
+    --fs-600: 2rem;
+    --fs-500: 1.625rem;
+    --fs-400: 1.5rem;
+    --fs-300: 1rem;
+
+    /* Font Families */
+    --ff-heading: 'Montserrat', sans-serif;
+    --ff-text: 'Roboto', sans-serif;
+
+    /* Border Radius */
+    --br : 3px
+
+}
+
+@media ( max-width: 35.9375rem ) {
+    :root {
+        --fs-700: 2.2rem;
+    }
+}

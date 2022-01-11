@@ -1,0 +1,12 @@
+/* Colors */
+
+.bg-primary { background-color: hsl( var(--primary-color) ); }
+.bg-primary-dark { background-color: hsl( var(--primary-color-shade) ); }
+.bg-white { background-color: hsl( var(--white-color) ); }
+.bg-grey { background-color: hsl( var(--text-color) ); }
+.bg-lightgrey { background-color: hsl( var(--lightgrey-color) ); }
+
+.text-primary { color: hsl( var(--primary-color) ); }
+.text-primary-tint { color: hsl( var(--primary-color-tint) ); }
+.text-dark { color: hsl( var(--text-color) ); }
+.text-white { color: hsl( var(--white-color) ); }
