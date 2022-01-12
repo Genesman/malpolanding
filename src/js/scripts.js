@@ -16,10 +16,10 @@ var swiperBanner = new Swiper(".banner-slide", {
         nextEl: ".next",
         prevEl: ".prev",
     },
-    autoplay: {
-        delay: 9000,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 9000,
+    //     disableOnInteraction: false,
+    // },
     thumbs: {
         swiper: swiperBannerThumbs,
     },

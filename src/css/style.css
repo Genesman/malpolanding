@@ -245,7 +245,8 @@ select {
 
 @media (min-width: 75rem) {
     .banner-project {
-        grid-template-columns: 60% 30% minmax(0, 1fr);
+        --gap: 0;
+        grid-template-columns: 60% 40%;
     }
 }
 
@@ -262,6 +263,15 @@ select {
 @media (min-width: 75rem) {
     .banner-image {
         grid-column: 1 / 2;
+    }
+
+    .banner-image .swiper {
+        height: 100%;
+    }
+
+    .banner-image .swiper-slide img {
+        height: 100%;
+        object-fit: cover;
     }
 }
 
