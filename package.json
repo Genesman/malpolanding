@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postcss:watch": "postcss src/sass/main.scss --dir  dist/css/ --watch"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/Genesman/malpolanding#readme",
   "devDependencies": {
+    "cssnano": "^5.0.15",
     "postcss": "^8.4.5",
-    "postcss-cli": "^9.1.0"
+    "postcss-cli": "^9.1.0",
+    "postcss-import": "^14.0.2",
+    "postcss-preset-env": "^7.2.0"
   }
 }
